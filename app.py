@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 
 app = Flask(__name__, static_folder='dist')
@@ -7,6 +7,11 @@ app = Flask(__name__, static_folder='dist')
 @app.route("/")
 def index():
     return render_template('index.html')
+
+
+@app.route('/test', methods=['GET'])
+def return_bs():
+    return jsonify({'dummyData': ['a', 'b', 'c']})
 
 
 app.run()
