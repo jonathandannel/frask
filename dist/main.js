@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar App = function App() {\n  return Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('h1', null, 'Flask + React + SKLearn fun');\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./components/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar makeDummyRequest = function makeDummyRequest() {\n  return fetch('/test', {\n    method: 'GET'\n  }).then(function (r) {\n    return r.json().then(function (j) {\n      return console.log(j);\n    });\n  });\n};\n\nvar App = function App() {\n  return Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null, Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('h1', null, 'Flask + React + SKLearn fun'), Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('button', {\n    onClick: makeDummyRequest\n  }, 'Test'));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./components/App.js?");
 
 /***/ }),
 
